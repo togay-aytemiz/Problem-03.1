@@ -44,7 +44,7 @@ export default function PinnedProjects() {
       <ul className="projects-list">
         {pinnedProject.map((project) => {
           return (
-            <li className="project-list-item">
+            <li className="project-list-item" key={crypto.randomUUID()}>
               <div className={`project-initials ${project.bgColor}`}>
                 {project.initials}
               </div>
